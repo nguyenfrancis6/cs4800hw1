@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+}
+
+#calculator {
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+#display {
+  width: 100%;
+  padding: 20px;
+  font-size: 5rem;
+  text-align: right;
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 35px;
+  border: none;
+  background-color: hsl(0, 0%, 30%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: hsl(0, 0%, 40%);
+}
+
+button:active{
+  background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+  background-color: hsl(14, 96%, 70%);
+}
+
+.operator-btn:hover {
+  background-color: hsl(14, 96%, 75%);
+}
+
+.operator-btn:active {
+  background-color: hsl(14, 96%, 80%);
+}
