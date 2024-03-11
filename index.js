@@ -25,3 +25,17 @@ function calculate() {
 function deleteOne() {
   display.value = display.value.slice(0, -1);
 }
+
+document.addEventListener('keydown', function(event) {
+  const key = event.key;
+
+  if (/[\d\.\+\-\*\/]/.test(key)){
+    appendToDisplay(key);
+  }
+  else if (key === 'Enter') {
+    calculate()
+  }
+  else if (key === 'Backspace') {
+    deleteOne();
+  }
+})
